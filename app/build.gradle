@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'maven-publish'
 
-group="com.krobys"
+group="com.longlam"
 
 def libraryVersionCode = 100
 def libraryVersionName = "1.0.0"
@@ -75,7 +75,7 @@ project.afterEvaluate {
                 artifact androidSourcesJar
 
                 // values used for local maven repo, jitpack uses github release:
-                groupId 'com.github.krobys'
+                groupId 'com.github.lamlong97'
                 artifactId 'Fast-Document-Scanner'
                 version libraryVersionName
             }

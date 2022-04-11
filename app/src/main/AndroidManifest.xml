@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.krobys.documentscanner">
+    package="com.longlam.documentscanner">
 
     <uses-feature android:name="android.hardware.camera2" />
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -14,12 +14,12 @@
         tools:ignore="UnusedAttribute">
 
         <activity
-            android:name="com.krobys.documentscanner.ui.scan.InternalScanActivity"
+            android:name="com.longlam.documentscanner.ui.scan.InternalScanActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ActivityTheme" />
 
         <activity
-            android:name="com.krobys.documentscanner.ScanActivity"
+            android:name="com.longlam.documentscanner.ScanActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ActivityTheme" />
 

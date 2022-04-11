@@ -25,7 +25,7 @@
 
         </FrameLayout>
 
-        <com.krobys.documentscanner.ui.components.polygon.PolygonView
+        <com.longlam.documentscanner.ui.components.polygon.PolygonView
             android:id="@+id/polygonView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
