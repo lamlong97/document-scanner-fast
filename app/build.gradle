@@ -3,10 +3,10 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'maven-publish'
 
-group="com.lamlong97"
+group="com.github.lamlong97"
 
 def libraryVersionCode = 100
-def libraryVersionName = "1.0.2"
+def libraryVersionName = "1.0.3"
 
 android {
     compileSdkVersion 31
