@@ -13,6 +13,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/topBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/zdc_top_bar_height"-->
+<!--            android:background="@color/zdc_transparent_black">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/flashButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:padding="@dimen/zdc_small_padding"-->
+<!--                android:src="@drawable/zdc_flash_off"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/autoButton"-->
+<!--                style="@style/ZdcTextView14sp.White"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:padding="@dimen/zdc_x_small_padding"-->
+<!--                android:text="@string/zdc_auto" />-->
+
+<!--        </RelativeLayout>-->
+
         <ImageView
             android:id="@+id/galleryButton"
             android:layout_width="@dimen/zdc_gallery_button_dimens"

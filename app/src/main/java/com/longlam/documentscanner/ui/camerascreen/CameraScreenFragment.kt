@@ -96,9 +96,9 @@ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
         cancelButton.setOnClickListener {
             finishActivity()
         }
-        flashButton.setOnClickListener {
-            switchFlashState()
-        }
+//        flashButton.setOnClickListener {
+//            switchFlashState()
+//        }
         galleryButton.setOnClickListener {
             checkForStoragePermissions()
         }
@@ -161,11 +161,11 @@ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
     }
 
     override fun showFlash() {
-        flashButton?.show()
+//        flashButton?.show()
     }
 
     override fun hideFlash() {
-        flashButton?.hide()
+//        flashButton?.hide()
     }
 
     private fun selectImageFromGallery() {
@@ -243,10 +243,10 @@ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
     }
 
     override fun showFlashModeOn() {
-        flashButton.setImageResource(R.drawable.zdc_flash_on)
+//        flashButton.setImageResource(R.drawable.zdc_flash_on)
     }
 
     override fun showFlashModeOff() {
-        flashButton.setImageResource(R.drawable.zdc_flash_off)
+//        flashButton.setImageResource(R.drawable.zdc_flash_off)
     }
 }
