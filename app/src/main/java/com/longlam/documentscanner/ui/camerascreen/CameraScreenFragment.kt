@@ -74,7 +74,6 @@ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
         // settings
         val sessionManager = SessionManager(getScanActivity())
         galleryButton.visibility = if (sessionManager.isGalleryEnabled()) View.VISIBLE else View.GONE
-        autoButton.visibility = if (sessionManager.isCaptureModeButtonEnabled()) View.VISIBLE else View.GONE
         scanSurfaceView.isAutoCaptureOn = sessionManager.isAutoCaptureEnabledByDefault()
         scanSurfaceView.isLiveDetectionOn = sessionManager.isLiveDetectionEnabled()
     }
@@ -104,19 +103,6 @@ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
         }
         galleryButton.setOnClickListener {
             checkForStoragePermissions()
-        }
-        autoButton.setOnClickListener {
-            toggleAutoManualButton()
-        }
-    }
-
-    private fun toggleAutoManualButton() {
-        scanSurfaceView.isAutoCaptureOn = !scanSurfaceView.isAutoCaptureOn
-        scanSurfaceView.isLiveDetectionOn = scanSurfaceView.isAutoCaptureOn
-        if (scanSurfaceView.isAutoCaptureOn) {
-            autoButton.text = getString(R.string.zdc_auto)
-        } else {
-            autoButton.text = getString(R.string.zdc_manual)
         }
     }
 
