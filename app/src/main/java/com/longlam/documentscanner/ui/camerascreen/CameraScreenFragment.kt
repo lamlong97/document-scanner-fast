@@ -32,8 +32,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.tbruyelle.rxpermissions3.RxPermissions
 import com.longlam.documentscanner.R
-import com.longlam.documentscanner.common.extensions.hide
-import com.longlam.documentscanner.common.extensions.show
 import com.longlam.documentscanner.common.utils.FileUriUtils
 import com.longlam.documentscanner.manager.SessionManager
 import com.longlam.documentscanner.model.DocumentScannerErrorModel
