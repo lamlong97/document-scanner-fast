@@ -58,7 +58,7 @@ internal class ScanCanvasView : FrameLayout {
 
     init {
         paint.color = ContextCompat.getColor(context, R.color.zdc_white_transparent)
-        border.color = ContextCompat.getColor(context, android.R.color.white)
+        border.color = ContextCompat.getColor(context, R.color.zdc_border)
         border.strokeWidth = context.resources.getDimension(R.dimen.zdc_polygon_line_stroke_width)
         border.style = Paint.Style.STROKE
         border.isAntiAlias = true
