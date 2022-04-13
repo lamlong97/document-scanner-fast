@@ -131,13 +131,13 @@ abstract class InternalScanActivity : AppCompatActivity() {
                         transformedImageFile = File(filesDir, "${TRANSFORMED_IMAGE_NAME}.${imageType.extension()}")
                         saveBitmap(it, transformedImageFile!!, imageType, imageQuality)
                     }
-                    transformedImageFile = transformedImageFile?.let {
-                        Compressor.compress(this@InternalScanActivity, it) {
-                            quality(imageQuality)
-                            if (imageSize != NOT_INITIALIZED) size(imageSize)
-                            format(imageType)
-                        }
-                    }
+//                    transformedImageFile = transformedImageFile?.let {
+//                        Compressor.compress(this@InternalScanActivity, it) {
+//                            quality(imageQuality)
+//                            if (imageSize != NOT_INITIALIZED) size(imageSize)
+//                            format(imageType)
+//                        }
+//                    }
                     transformedImageFile
                 }
                 croppedImage != null -> {
@@ -147,22 +147,22 @@ abstract class InternalScanActivity : AppCompatActivity() {
                             File(filesDir, "${CROPPED_IMAGE_NAME}.${imageType.extension()}")
                         saveBitmap(it, croppedImageFile!!, imageType, imageQuality)
                     }
-                    croppedImageFile = croppedImageFile?.let {
-                        Compressor.compress(this@InternalScanActivity, it) {
-                            quality(imageQuality)
-                            if (imageSize != NOT_INITIALIZED) size(imageSize)
-                            format(imageType)
-                        }
-                    }
+//                    croppedImageFile = croppedImageFile?.let {
+//                        Compressor.compress(this@InternalScanActivity, it) {
+//                            quality(imageQuality)
+//                            if (imageSize != NOT_INITIALIZED) size(imageSize)
+//                            format(imageType)
+//                        }
+//                    }
                     croppedImageFile
                 }
                 else -> {
-                    originalImageFile =
-                        Compressor.compress(this@InternalScanActivity, originalImageFile) {
-                            quality(imageQuality)
-                            if (imageSize != NOT_INITIALIZED) size(imageSize)
-                            format(imageType)
-                        }
+//                    originalImageFile =
+//                        Compressor.compress(this@InternalScanActivity, originalImageFile) {
+//                            quality(imageQuality)
+//                            if (imageSize != NOT_INITIALIZED) size(imageSize)
+//                            format(imageType)
+//                        }
                     originalImageFile
                 }
             }
