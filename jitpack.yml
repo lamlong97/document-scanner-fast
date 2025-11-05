@@ -5,4 +5,4 @@ before_install:
   - echo "Using Java 17 for JitPack build"
 
 install:
-  - ./gradlew clean :app:assembleRelease :app:publishToMavenLocal -Pgroup=com.github.lamlong97 -Pversion=1.0.28 -xlint -xtest
+  - ./gradlew clean :app:assembleRelease :app:publishToMavenLocal -Pgroup=com.github.lamlong97 -x lint -x test
