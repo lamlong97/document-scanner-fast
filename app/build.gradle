@@ -7,7 +7,7 @@ plugins {
 group = "com.github.lamlong97"
 
 def libraryVersionCode = 100
-def libraryVersionName = "1.0.21"
+def libraryVersionName = "1.0.26"
 
 android {
     namespace "com.erp.xboss.documentScanner"
