@@ -6,4 +6,4 @@ before_install:
 
 build:
   script:
-    - ./gradlew clean -Pgroup=com.github.lamlong97 -Pversion=1.0.14 -xtest -xlint assemble publishToMavenLocal
+    - ./gradlew clean -Pgroup=com.github.lamlong97 -Pversion=1.0.21 -xlint -xtest assembleRelease publishToMavenLocal
