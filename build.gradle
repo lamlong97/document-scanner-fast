@@ -6,6 +6,7 @@ buildscript {
         mavenCentral()
         maven { url "https://jitpack.io" }
         maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'https://maven.moxtra.com/nexus/content/groups/public' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.3"
