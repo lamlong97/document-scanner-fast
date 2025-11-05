@@ -53,7 +53,8 @@ dependencies {
 
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
 
-    implementation 'com.github.mehdico:Tiny-OpenCV:4.4.0-4'
+    implementation 'com.github.mehdico:Tiny-OpenCV:4.12.3-1'
+    
 
     implementation "androidx.camera:camera-camera2:1.0.2"
     implementation "androidx.camera:camera-lifecycle:1.0.2"
